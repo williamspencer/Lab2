@@ -9,7 +9,7 @@ class adventureGame {
 		boolean stop = false;
 		String name;
 		String input;
-		
+
 		System.out.print("Welcome! What is your name? (enter your name): ");
 		name = sc.nextLine();
 
@@ -30,7 +30,7 @@ class adventureGame {
 				input1 = sc.nextLine();
 
 				if (input1.equalsIgnoreCase("face the beast"))
-					System.out.println("you decide to face your fears!");
+					System.out.println("Wow, pretty confident... well, okay!");
 				else {
 					stop = true;
 					break;
@@ -53,7 +53,7 @@ class adventureGame {
 				break;
 
 			case 3:
-				System.out.println("The Dragon stares back intensely");
+				System.out.println("The Dragon stares back intensely.");
 				gameStart = 6;
 				break;
 
@@ -70,11 +70,11 @@ class adventureGame {
 			case 6:
 				String weapon;
 				String eyes;
-				System.out.println("Choose your weapon. (enter any weapon of your choice): ");
+				System.out.println("Choose your weapon: (enter any weapon of your choice): ");
 
 				weapon = sc.nextLine();
 
-				System.out.println("Armed with your " + weapon + ", you approach the dragon");
+				System.out.println("Armed with your " + weapon + ", you approach the dragon.");
 
 				System.out.println("You can feel its fiery breath as you get closer"
 						+ ", it stares at you with its ____ eyes. (enter 'red' or 'blue'): ");
@@ -90,7 +90,7 @@ class adventureGame {
 				break;
 			case 7:
 				System.out.println("Oh thank goodness! Red-eyed dragons are friendly.  "
-						+ "You pet it and become friends.  You name the dragon__.");
+						+ "You pet it and become friends.  You name the dragon___ " + "(enter a name): ");
 
 				String dragon = sc.nextLine();
 				System.out.println(name + " and " + dragon + " live happly ever after.");
@@ -98,8 +98,8 @@ class adventureGame {
 				break;
 
 			case 8:
-				System.out.println(
-						"Oh no blue eyed dragons are extremely aggressive." + "  It kills you with its fire breath");
+				System.out.println("Oh no blue eyed dragons are extremely aggressive."
+						+ "  It kills you with its fire breath instantly");
 				stop = true;
 				break;
 			}
